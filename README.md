@@ -1,7 +1,8 @@
 Real Time Customer Happiness Prediction - FYC
 
-#prerequisite
-Python3
+prerequisite
+------------
+Intall Python3
 
 Steps to run Poc
 ----------------
