@@ -2,7 +2,7 @@ import sys
 import requests
 
 
-subscription_key = "5c28af14efc04dc9988e119d9f6eafcb"
+subscription_key = "354ce830a38045d988ff8100dc5ab957"
 assert subscription_key
 vision_base_url = "https://westcentralus.api.cognitive.microsoft.com/vision/v1.0/"
 vision_analyze_url = vision_base_url + "analyze"
@@ -22,6 +22,7 @@ response = requests.post(vision_analyze_url, headers=headers, params=params, dat
 #response.raise_for_status()
 analysis = response.json()
 image_caption = analysis["description"]["captions"][0]["text"].capitalize()
+
 tags = analysis["description"]["tags"]
 hasFood = False
 for tag in tags:
@@ -31,7 +32,7 @@ for tag in tags:
 
 ###predicting happiness
 
-subscription_key = "918242e7f71e4022bef92cc180205b79"
+subscription_key = "cd49c09079894d20825d3299440b7538"
 assert subscription_key
 face_base_url = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect"
 face_analyze_url = face_base_url + "analyze"
