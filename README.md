@@ -21,3 +21,5 @@ Sample
 python pacesetters.py Test.jpg
 
 
+##
+If you are getting error please generate new key from Azure and replae is it in the program
